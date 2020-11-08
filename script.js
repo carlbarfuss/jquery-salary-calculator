@@ -54,15 +54,21 @@ function addEmployee(){
 function updateBudget(){
     let salaryTotal = 0;
     for(let i=0; i<employeeTable.rows.length; i++){
-        salaryTotal += Number(employeeTable.rows[i].cells[4].innerHTML);
+        salaryTotal += parseInt(Number(employeeTable.rows[i].cells[4].innerHTML) / 12);
     }
 $('#employeeTotalSalaries').empty();
-$('#employeeTotalSalaries').append(`Salary Total is: $${salaryTotal}`);
+$('#employeeTotalSalaries').append(`Monthly Salary Total is: $${salaryTotal}`);
+//set class to change background color of budget
+if(salaryTotal > 20000){
+    $('#employeeTotalSalaries').addClass("redBackground");
+}
+else{
+    $('#employeeTotalSalaries').removeClass("redBackground");
+}
 }//end updateBudget
 
 function removeRow(){
     $('.removeButton').on('click', removeRow);
-    console.log('in removeRow');
     $(this).closest('tr').remove();
     updateBudget();
 }
