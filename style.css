@@ -1,0 +1,45 @@
+header {
+    background-color: grey;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+main {
+    margin-left: 20px;
+}
+
+form {
+}
+
+#employeeTotalSalaries {
+    text-align: left;
+}
+
+th {
+    height: 40px;
+    width: 120px;
+    background-color: ivory;
+    border-style: solid;
+    border-color: black;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    padding: 3px;
+    font-weight: bold;
+}
+
+td {
+    text-align: center;
+    height: 40px;
+    width: 120px;
+    border-style: solid;
+    border-color: black;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    padding: 3px;
+  
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0px;
+}

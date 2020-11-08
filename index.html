@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>JQUERY SALARY CALC</title>
+</head>
+<body>
+    <header>
+        <h1>JQUERY Salary Form</h1>
+    </header>
+    <main>  
+        <h3>Add Employee</h3>
+        <form id="employeeInput">
+            <input type="text" name="fname" placeholder="First Name" id="fnameInput">
+            <input type="text" name="lname" placeholder="Last Name" id="lnameInput">
+            <input type="number" name="ID" placeholder="ID" id="IDInput">
+            <input type="text" name="title" placeholder="Title" id="titleInput">
+            <Input type="number" name="salary" placeholder="Annual Salary" id="salaryInput">
+            <br><br>
+            <input type="button" id="submitButton" value="Submit(new employee) to your robot Overlords">
+        </form>
+        <h1>Employees</h1>
+        <table>
+            <thread>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Employee ID</th>
+                    <th>Title</th>
+                    <th>Annual Salary</th>
+                    <th></th>
+                </tr>
+            </thread>
+            <tbody id="employeeTable">
+                <!-- jquery will fill this in-->
+            </tbody>
+                
+        </table>
+        <h2 id="employeeTotalSalaries"></h2>
+    </main>
+    <footer></footer>
+</body>
+</html>
