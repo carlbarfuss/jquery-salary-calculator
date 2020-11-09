@@ -13,7 +13,6 @@ Enable user to remove table entries as needed.
 None
 
 ## Usage
-How does someone use this application? Tell a user story here.
 
 1. Enter data into input fields
 2. Submit Data
